@@ -375,15 +375,34 @@ footer {
 /*                        RESPONSIVENESS                         */
 /* ------------------------------------------------------------- */
 
+@media (max-width: 1100px) { 
+
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .project-card img {
+    width: 240px;
+  }
+
+}
+
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
+    gap: 10px;
     padding: 15px;
   }
 
   .header nav ul {
     flex-direction: column;
     gap: 12px;
+  }
+
+  .header nav ul li a {
+    width: 100px;
   }
 
   .intro-wrapper {
@@ -393,6 +412,10 @@ footer {
   .intro-image img {
     width: 140px;
     height: 140px;
+  }
+
+  .project-card img {
+    width: 240px;
   }
 }
 
